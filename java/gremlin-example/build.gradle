@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.tinkerpop:gremlin-driver:3.4.6'
+    implementation 'org.janusgraph:janusgraph-driver:0.5.1'
+
+    implementation 'org.slf4j:slf4j-simple:1.7.30'
+}
+
+application {
+    mainClassName = "Example"
+}
